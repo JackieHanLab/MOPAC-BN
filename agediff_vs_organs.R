@@ -4,10 +4,10 @@ rm(list = ls())
 setwd('./proteomic_aging/BN')
 
 # Load dataset: expected format is a dataframe 
-# 'df' (n_samples * n_organs)
+# df: n_samples * n_organs
+# rows: Individual samples
+# columns: Organ-proxy AgeDiff.
 load('./agediff_bn.RData')
-# This file contains a dataframe
-# n_people * n_organ
 
 # BN
 library(bnlearn)
